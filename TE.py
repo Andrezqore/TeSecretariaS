@@ -132,7 +132,7 @@ def procesar_excel():
                 horas_trabajadas = rellenar_con_ceros(row['HORAS TIEMPO'], 2)
                 dias_trabajados = calcular_dias_trabajados(int(row['HORAS TIEMPO']))
             else:
-                horas_trabajadas = rellenar_con_ceros(str(int(row['DIAS DE GU Y PD']) * 4), 2)
+                horas_trabajadas = rellenar_con_ceros(str(int(row['DIAS DE GU Y PD'])), 2)
                 dias_trabajados = "00"
             
             clave = (
